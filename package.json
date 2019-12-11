@@ -1,0 +1,70 @@
+{
+  "name": "calculator-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.5.2",
+    "@material-ui/icons": "^4.5.1",
+    "algoliasearch": "^3.35.1",
+    "antd": "^3.24.3",
+    "babel-plugin-import": "^1.12.2",
+    "chart.js": "^2.9.2",
+    "clsx": "^1.0.4",
+    "customize-cra": "^0.8.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "material-ui": "^1.0.0-beta.47",
+    "node-fetch": "^2.6.0",
+    "parse": "^2.9.0",
+    "react": "^16.11.0",
+    "react-app-rewired": "^2.1.4",
+    "react-chartjs-2": "^2.8.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
+    "react-wordcloud": "^1.1.1",
+    "request": "^2.88.0",
+    "unsplash-js": "^6.0.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "precommit": "NODE_ENV=production lint-staged"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "pretty-quick --staged",
+      "eslint src/ --fix",
+      "git add"
+    ]
+  }
+}
